@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="light.css">
+    <script src="https://kit.fontawesome.com/af1f25ebfd.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    
+<button onClick="playMusic()" id="mb" class="mbutton"> &#9835</button>
+<div onClick="darkMode()" id="dm" class="dbutton"  ><i id="icon" class="fa-solid fa-moon"></i></div>
+
+
+
+
+    <div class="main">
+        <div id="display">
+          <p id="value"></p>
+        </div>
+        <div class="buttons">
+            <button class="btn" value="!" onClick="displayValue('!')">AC</button>
+            <button class="btn" value="{" onClick="displayValue('{')">()</button>
+            <button class="btn" value="%" onClick="displayValue('%')">%</button>
+            <button class="btn" value="÷" onClick="displayValue('/')">÷</button>
+        </div>
+        <div class="buttons">
+            <button class="btn" value="8" onClick="displayValue(8)">8</button>
+            <button class="btn" value="9" onClick="displayValue(9)">9</button>
+            <button class="btn" value="7" onClick="displayValue(7)">7</button>
+            <button class="btn" value="×" onClick="displayValue('*')">×</button>
+        </div>
+        <div class="buttons">
+            <button class="btn" value="4" onClick="displayValue(4)">4</button>
+            <button class="btn" value="5" onClick="displayValue(5)">5</button>
+            <button class="btn" value="6" onClick="displayValue(6)">6</button>
+            <button class="btn" value="-" onClick="displayValue('-')">-</button>
+        </div>
+        <div class="buttons">
+            <button class="btn" value="1" onClick="displayValue(1)">1</button>
+            <button class="btn" value="2" onClick="displayValue(2)">2</button>
+            <button class="btn" value="3" onClick="displayValue(3)">3</button>
+            <button class="btn" value="+" onClick="displayValue('+')">+</button>
+        </div>
+        <div class="buttons">
+            <button class="btn" value="0" onClick="displayValue(0)">0</button>
+            <button class="btn" value="." onClick="displayValue('.')">.</button>
+            <button class="btn" value="#" onClick="displayValue('#')">⌫</button>
+            <button class="btn" value="=" onClick="displayValue('=')">=</button>
+        </div>
+
+    </div>
+    <div class="glow"></div>
+    <script src="index.js" async defer></script>
+</body>
+
+</html>

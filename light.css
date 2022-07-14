@@ -1,0 +1,124 @@
+
+body:not(.mbutton) {
+  overflow: hidden; 
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+.main {
+  width: 350px;
+
+  background: transparent;
+  padding: 10px;
+  border-radius: 20px;
+  /* margin-top: 65px; */
+  backdrop-filter: 5px;
+  box-shadow: 0px 20px 50px rgb(0, 0, 0, 0.15);
+}
+#display {
+    display: block;
+  width: 100%;
+  height: 90px;
+  background: transparent;
+  /* border: none; */
+  text-align: right;
+  font-size: 50px;
+  color: white;
+  /* outline: none; */
+
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: calc((100% - 15px) / 4);
+  height: 85px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+transition: all 0.1s ease;
+
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#value
+{
+    
+    font-size: 25px;
+    color: white;
+    text-align: right;
+}
+
+.mbutton {
+  position: absolute;
+  display: block;
+  background: transparent;
+  border-radius: 50%;
+  border: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: transparent;
+  height: 30px;
+  width: 30px;
+ top:10px;
+right: 50px;
+
+
+}
+.mbutton:hover{
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dbutton{
+  position: absolute;
+  display: block;
+  background: transparent;
+  border-radius: 50%;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.9s); */
+  cursor: pointer;
+  font-size: 15px;
+  color: rgba(49, 49, 49, 0.5);
+  height: 30px;
+  width: 30px;
+ /* top:10px;
+right: 12px; */
+padding: 3px;
+align-items: center;
+top:15px;
+right: 70px;
+}
+
+.dbutton:hover{
+color: rgba(56, 55, 55, 0.15);;
+}
+
+
+
